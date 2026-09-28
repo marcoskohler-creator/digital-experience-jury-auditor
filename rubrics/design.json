@@ -1,0 +1,17 @@
+{
+  "rubric_id": "design",
+  "version": "1.0.0",
+  "checks": [
+    "typography",
+    "layout",
+    "art_direction",
+    "ui_system",
+    "responsive_composition",
+    "hierarchy",
+    "polish",
+    "distinctiveness"
+  ],
+  "rules": [
+    "Technology or trend presence does not earn points by itself."
+  ]
+}

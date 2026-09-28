@@ -1,0 +1,28 @@
+{
+  "rubric_id": "engineering",
+  "version": "1.0.0",
+  "checks": [
+    "architecture",
+    "component_boundaries",
+    "duplicate_code",
+    "dead_code",
+    "dependency_load",
+    "bundle_splitting",
+    "rendering_strategy",
+    "hydration",
+    "caching",
+    "image_pipeline",
+    "font_strategy",
+    "third_party_scripts",
+    "state_management",
+    "error_boundaries",
+    "observability",
+    "maintainability",
+    "testability",
+    "build_warnings",
+    "console_errors"
+  ],
+  "rules": [
+    "Technology or trend presence does not earn points by itself."
+  ]
+}

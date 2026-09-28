@@ -1,0 +1,67 @@
+{
+  "rubric_id": "seo-quality",
+  "name": "SEO Quality Score",
+  "version": "1.0.0",
+  "scale": "0-100",
+  "officiality": "internal_score_grounded_in_google_guidance",
+  "aggregation": {
+    "type": "weighted_mean",
+    "visibility_separate": true
+  },
+  "dimensions": [
+    {
+      "id": "crawlability_indexability",
+      "label": "Crawlability Indexability",
+      "weight": 0.15
+    },
+    {
+      "id": "technical_seo",
+      "label": "Technical Seo",
+      "weight": 0.15
+    },
+    {
+      "id": "architecture_internal_linking",
+      "label": "Architecture Internal Linking",
+      "weight": 0.1
+    },
+    {
+      "id": "onpage_semantics",
+      "label": "Onpage Semantics",
+      "weight": 0.15
+    },
+    {
+      "id": "content_search_intent",
+      "label": "Content Search Intent",
+      "weight": 0.15
+    },
+    {
+      "id": "performance_cwv",
+      "label": "Performance Cwv",
+      "weight": 0.1
+    },
+    {
+      "id": "structured_data_serp",
+      "label": "Structured Data Serp",
+      "weight": 0.07
+    },
+    {
+      "id": "image_media_seo",
+      "label": "Image Media Seo",
+      "weight": 0.05
+    },
+    {
+      "id": "mobile_accessibility_discoverability",
+      "label": "Mobile Accessibility Discoverability",
+      "weight": 0.05
+    },
+    {
+      "id": "trust_spam_risk_hygiene",
+      "label": "Trust Spam Risk Hygiene",
+      "weight": 0.03
+    }
+  ],
+  "notes": [
+    "SEO quality is not ranking probability.",
+    "Organic visibility is NOT_VERIFIED without reliable performance data."
+  ]
+}

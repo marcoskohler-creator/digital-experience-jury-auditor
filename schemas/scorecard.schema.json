@@ -1,0 +1,46 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "scorecard.schema.json",
+  "title": "Scorecard",
+  "type": "object",
+  "required": [
+    "audit_id",
+    "timestamp",
+    "scores",
+    "confidence",
+    "unverified"
+  ],
+  "properties": {
+    "audit_id": {
+      "type": "string"
+    },
+    "timestamp": {
+      "type": "string"
+    },
+    "rubric_versions": {
+      "type": "object"
+    },
+    "scores": {
+      "type": "object"
+    },
+    "confidence": {
+      "type": "object"
+    },
+    "caps_applied": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "unverified": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "officiality_disclaimer": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": true
+}

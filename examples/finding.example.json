@@ -1,0 +1,38 @@
+{
+  "id": "UX-NAV-001",
+  "status": "open",
+  "lens": [
+    "ux",
+    "awwwards.usability",
+    "webby.structure_navigation"
+  ],
+  "page": "/work",
+  "viewport": "390x844",
+  "browser": "chromium",
+  "severity": "P1",
+  "confidence": 0.94,
+  "observation": "Primary mobile navigation obscures focus and presents excessive first-level choices.",
+  "evidence": [
+    "EV-OBS-001",
+    "EV-MEAS-004"
+  ],
+  "criterion": "navigation clarity",
+  "benchmark": {
+    "cohort_id": "cohort_example",
+    "reference": "P75"
+  },
+  "penalty": {
+    "dimension": "usability",
+    "amount": -0.6
+  },
+  "why_penalized": "Higher decision load and loss of keyboard orientation.",
+  "root_cause": "Navigation information architecture and overlay focus management are coupled incorrectly.",
+  "user_impact": "Slower discovery and keyboard trap risk.",
+  "seo_impact": "none",
+  "award_impact": "Reduces usability/structure readiness.",
+  "recommended_action": "Reduce top-level choices and implement deterministic focus management/current-page state.",
+  "validation": "Keyboard regression test at mobile viewport plus repeated navigation task.",
+  "effort": "medium",
+  "regression_risk": "low",
+  "priority_value": null
+}

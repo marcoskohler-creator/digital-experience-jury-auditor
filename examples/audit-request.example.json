@@ -1,0 +1,17 @@
+{
+  "url": "https://example.com",
+  "mode": "FULL",
+  "locale": "pt-BR",
+  "business_goal": "lead_generation",
+  "site_type": "portfolio",
+  "award_targets": [
+    "awwwards",
+    "webby",
+    "fwa",
+    "cssda"
+  ],
+  "constraints": {
+    "must_keep": [],
+    "cannot_change": []
+  }
+}

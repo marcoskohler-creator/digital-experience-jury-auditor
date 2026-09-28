@@ -1,0 +1,158 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "finding.schema.json",
+  "title": "Finding",
+  "type": "object",
+  "required": [
+    "id",
+    "status",
+    "lens",
+    "severity",
+    "confidence",
+    "observation",
+    "evidence",
+    "criterion",
+    "root_cause",
+    "recommended_action",
+    "validation",
+    "effort",
+    "regression_risk"
+  ],
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "status": {
+      "enum": [
+        "open",
+        "resolved",
+        "accepted_risk",
+        "not_verified"
+      ]
+    },
+    "lens": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1
+    },
+    "page": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "viewport": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "browser": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "severity": {
+      "enum": [
+        "P0",
+        "P1",
+        "P2",
+        "P3",
+        "P4"
+      ]
+    },
+    "confidence": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "observation": {
+      "type": "string"
+    },
+    "evidence": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1
+    },
+    "criterion": {
+      "type": "string"
+    },
+    "benchmark": {
+      "type": [
+        "object",
+        "null"
+      ]
+    },
+    "penalty": {
+      "type": [
+        "object",
+        "null"
+      ]
+    },
+    "why_penalized": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "root_cause": {
+      "type": "string"
+    },
+    "user_impact": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "seo_impact": {
+      "enum": [
+        "none",
+        "low",
+        "medium",
+        "high",
+        "critical",
+        "not_applicable"
+      ]
+    },
+    "award_impact": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "recommended_action": {
+      "type": "string"
+    },
+    "validation": {
+      "type": "string"
+    },
+    "effort": {
+      "enum": [
+        "very_low",
+        "low",
+        "medium",
+        "high",
+        "very_high"
+      ]
+    },
+    "regression_risk": {
+      "enum": [
+        "low",
+        "medium",
+        "high"
+      ]
+    },
+    "priority_value": {
+      "type": [
+        "number",
+        "null"
+      ]
+    }
+  },
+  "additionalProperties": true
+}

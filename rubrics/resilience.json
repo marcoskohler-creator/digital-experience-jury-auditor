@@ -1,0 +1,21 @@
+{
+  "rubric_id": "resilience",
+  "version": "1.0.0",
+  "checks": [
+    "404",
+    "failed_api",
+    "slow_api",
+    "broken_image",
+    "timeout",
+    "offline_intermittent",
+    "failed_form_submission",
+    "empty_state",
+    "partial_content",
+    "loading_states",
+    "auth_expiry",
+    "js_failure_fallback"
+  ],
+  "rules": [
+    "Technology or trend presence does not earn points by itself."
+  ]
+}

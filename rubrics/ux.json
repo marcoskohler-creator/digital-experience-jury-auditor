@@ -1,0 +1,26 @@
+{
+  "rubric_id": "ux",
+  "version": "1.0.0",
+  "checks": [
+    "information_architecture",
+    "navigation",
+    "orientation",
+    "task_flow",
+    "feedback",
+    "affordance",
+    "error_prevention",
+    "error_recovery",
+    "cognitive_load",
+    "reading_flow",
+    "forms",
+    "touch",
+    "responsiveness",
+    "perceived_latency",
+    "state_visibility",
+    "user_control",
+    "accessibility_related_usability"
+  ],
+  "rules": [
+    "Technology or trend presence does not earn points by itself."
+  ]
+}

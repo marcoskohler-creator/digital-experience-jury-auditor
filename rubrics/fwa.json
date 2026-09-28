@@ -1,0 +1,50 @@
+{
+  "rubric_id": "fwa-simulated-judgment",
+  "name": "FWA Simulated Judgment",
+  "version": "1.0.0",
+  "scale": "0-10",
+  "officiality": "internal_empirical_only",
+  "aggregation": {
+    "type": "weighted_mean",
+    "warning": "Empirical heuristic only. Calibrate against FWA-recognized cohort; never label official."
+  },
+  "dimensions": [
+    {
+      "id": "concept_strength",
+      "label": "Concept strength",
+      "weight": 0.25,
+      "weight_status": "internal_empirical"
+    },
+    {
+      "id": "innovation",
+      "label": "Innovation",
+      "weight": 0.2,
+      "weight_status": "internal_empirical"
+    },
+    {
+      "id": "craft_execution",
+      "label": "Craft / execution",
+      "weight": 0.2,
+      "weight_status": "internal_empirical"
+    },
+    {
+      "id": "experience_engagement",
+      "label": "Experience / engagement",
+      "weight": 0.15,
+      "weight_status": "internal_empirical"
+    },
+    {
+      "id": "technical_execution",
+      "label": "Technical execution",
+      "weight": 0.1,
+      "weight_status": "internal_empirical"
+    },
+    {
+      "id": "memorability",
+      "label": "Memorability",
+      "weight": 0.1,
+      "weight_status": "internal_empirical"
+    }
+  ],
+  "notes": []
+}

@@ -1,0 +1,101 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "audit-request.schema.json",
+  "title": "Audit Request",
+  "type": "object",
+  "required": [
+    "url"
+  ],
+  "properties": {
+    "url": {
+      "type": "string",
+      "format": "uri"
+    },
+    "mode": {
+      "enum": [
+        "QUICK",
+        "FULL",
+        "FORENSIC",
+        "REGRESSION",
+        "AWARD_SUBMISSION",
+        "SEO_FORENSIC"
+      ]
+    },
+    "locale": {
+      "type": "string"
+    },
+    "business_goal": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "site_type": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "award_targets": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "awwwards",
+          "webby",
+          "fwa",
+          "cssda"
+        ]
+      },
+      "uniqueItems": true
+    },
+    "award_categories": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "competitors": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "format": "uri"
+      }
+    },
+    "known_benchmarks": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "format": "uri"
+      }
+    },
+    "source_repository": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "search_console": {
+      "type": [
+        "object",
+        "null"
+      ]
+    },
+    "analytics": {
+      "type": [
+        "object",
+        "null"
+      ]
+    },
+    "previous_audit": {
+      "type": [
+        "string",
+        "object",
+        "null"
+      ]
+    },
+    "constraints": {
+      "type": "object"
+    }
+  },
+  "additionalProperties": true
+}

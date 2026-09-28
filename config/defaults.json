@@ -1,0 +1,90 @@
+{
+  "schema_version": "1.0",
+  "default_mode": "FULL",
+  "viewports": [
+    "360x800",
+    "390x844",
+    "768x1024",
+    "1024x768",
+    "1440x900",
+    "1920x1080"
+  ],
+  "browsers": [
+    "chromium",
+    "firefox",
+    "webkit_or_safari_if_available"
+  ],
+  "benchmark_minimums": {
+    "QUICK": [
+      12,
+      20
+    ],
+    "FULL": [
+      20,
+      50
+    ],
+    "FORENSIC": [
+      40,
+      100
+    ],
+    "ELITE_MIN": 10
+  },
+  "confidence_weights": {
+    "evidence_coverage": 0.35,
+    "benchmark_fit": 0.25,
+    "measurement_quality": 0.2,
+    "repeatability": 0.2
+  },
+  "digital_excellence_weights": {
+    "experience_craft": 0.25,
+    "ux_usability": 0.15,
+    "engineering_performance": 0.2,
+    "seo_discoverability": 0.15,
+    "accessibility": 0.1,
+    "content": 0.05,
+    "conversion": 0.05,
+    "resilience_security_privacy": 0.05
+  },
+  "severity_order": {
+    "P0": 0,
+    "P1": 1,
+    "P2": 2,
+    "P3": 3,
+    "P4": 4
+  },
+  "score_caps": [
+    {
+      "id": "CAP-UX-MOBILE-TASK",
+      "when": "primary_task_impossible_mobile",
+      "target": "ux",
+      "max": 5.0,
+      "rationale": "Critical task failure cannot be hidden by averages."
+    },
+    {
+      "id": "CAP-SEO-NOINDEX",
+      "when": "public_site_unintentionally_noindex",
+      "target": "seo_quality",
+      "max": 35,
+      "rationale": "Critical indexability blocker."
+    },
+    {
+      "id": "CAP-A11Y-NAV",
+      "when": "primary_navigation_not_keyboard_operable",
+      "target": "accessibility_quality",
+      "max": 60,
+      "rationale": "Critical keyboard-operability failure; WCAG AA cannot be claimed."
+    },
+    {
+      "id": "CAP-RESILIENCE-CRASH",
+      "when": "primary_page_consistently_crashes",
+      "target": "engineering_resilience",
+      "max": 50,
+      "rationale": "Primary experience unavailable."
+    }
+  ],
+  "pattern_thresholds": {
+    "EXPECTED_min_frequency": 0.7,
+    "TREND_min_frequency": 0.35,
+    "note": "Frequency alone never determines classification; functional/normative meaning and correlation evidence are required."
+  }
+}

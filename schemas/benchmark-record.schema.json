@@ -1,0 +1,100 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "benchmark-record.schema.json",
+  "title": "Benchmark Source Record",
+  "type": "object",
+  "required": [
+    "id",
+    "name",
+    "url",
+    "award_source",
+    "source_url",
+    "snapshot_date",
+    "provenance"
+  ],
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "url": {
+      "type": "string"
+    },
+    "award_source": {
+      "enum": [
+        "awwwards",
+        "webby",
+        "fwa",
+        "cssda",
+        "seo_peer",
+        "other"
+      ]
+    },
+    "award_level": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "award_category": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "award_date": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "source_url": {
+      "type": "string"
+    },
+    "site_type": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "vertical": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "interaction_intensity": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "content_density": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "award_version_verified": {
+      "type": "boolean"
+    },
+    "current_version_checked": {
+      "type": "boolean"
+    },
+    "snapshot_date": {
+      "type": "string"
+    },
+    "features": {
+      "type": "object"
+    },
+    "metrics": {
+      "type": "object"
+    },
+    "provenance": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": true
+}

@@ -1,0 +1,37 @@
+{
+  "rubric_id": "accessibility-quality",
+  "name": "Accessibility Quality",
+  "version": "1.0.0",
+  "scale": "0-100",
+  "officiality": "internal_quality_score_plus_normative_conformance",
+  "aggregation": {
+    "type": "weighted_mean",
+    "conformance_separate": true,
+    "baseline": "WCAG 2.2"
+  },
+  "dimensions": [
+    {
+      "id": "perceivable",
+      "label": "Perceivable",
+      "weight": 0.25
+    },
+    {
+      "id": "operable",
+      "label": "Operable",
+      "weight": 0.3
+    },
+    {
+      "id": "understandable",
+      "label": "Understandable",
+      "weight": 0.2
+    },
+    {
+      "id": "robust",
+      "label": "Robust",
+      "weight": 0.25
+    }
+  ],
+  "notes": [
+    "Automated checks cannot establish complete conformance."
+  ]
+}

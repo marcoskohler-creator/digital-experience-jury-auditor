@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "report-manifest.schema.json",
+  "title": "Audit Report Manifest",
+  "type": "object",
+  "required": [
+    "audit_id",
+    "target",
+    "mode",
+    "generated_at",
+    "evidence_coverage",
+    "outputs"
+  ],
+  "properties": {
+    "audit_id": {
+      "type": "string"
+    },
+    "target": {
+      "type": "string"
+    },
+    "mode": {
+      "type": "string"
+    },
+    "generated_at": {
+      "type": "string"
+    },
+    "methodology_version": {
+      "type": "string"
+    },
+    "rubric_versions": {
+      "type": "object"
+    },
+    "source_lock_verified_at": {
+      "type": "string"
+    },
+    "evidence_coverage": {
+      "type": "object"
+    },
+    "outputs": {
+      "type": "object"
+    },
+    "limitations": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

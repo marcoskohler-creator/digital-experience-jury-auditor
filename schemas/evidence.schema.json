@@ -1,0 +1,86 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "evidence.schema.json",
+  "title": "Evidence Record",
+  "type": "object",
+  "required": [
+    "id",
+    "type",
+    "timestamp",
+    "description"
+  ],
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "type": {
+      "enum": [
+        "OBSERVED",
+        "MEASURED",
+        "SOURCE_VERIFIED",
+        "BENCHMARK_DERIVED",
+        "INFERRED",
+        "USER_PROVIDED",
+        "NOT_VERIFIED"
+      ]
+    },
+    "timestamp": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "url": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "page": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "viewport": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "browser": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "source": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "value": {},
+    "units": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "artifact_ref": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "reproducibility": {
+      "enum": [
+        "HIGH",
+        "MEDIUM",
+        "LOW",
+        "NOT_APPLICABLE"
+      ]
+    }
+  },
+  "additionalProperties": true
+}

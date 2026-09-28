@@ -1,0 +1,59 @@
+{
+  "rubric_id": "cssda-jury-simulation",
+  "name": "CSSDA Jury Simulation",
+  "version": "1.0.0",
+  "scale": "0-10",
+  "officiality": "official_dimensions_internal_aggregation",
+  "aggregation": {
+    "type": "internal_mean",
+    "public_vote_component": "NOT_PREDICTED",
+    "wotd_reference": "approximately >8.0 average, variable according to submission quality; refresh before use"
+  },
+  "dimensions": [
+    {
+      "id": "ui",
+      "label": "UI",
+      "weight": 0.3333333333333333,
+      "weight_status": "internal_mean",
+      "checks": [
+        "aesthetics",
+        "composition",
+        "typography",
+        "details",
+        "visual_states",
+        "effects",
+        "consistency",
+        "responsiveness"
+      ]
+    },
+    {
+      "id": "ux",
+      "label": "UX",
+      "weight": 0.3333333333333333,
+      "weight_status": "internal_mean",
+      "checks": [
+        "navigation",
+        "functionality",
+        "comprehension",
+        "feedback",
+        "practical_accessibility",
+        "device_behavior",
+        "task_completion"
+      ]
+    },
+    {
+      "id": "innovation",
+      "label": "Innovation",
+      "weight": 0.3333333333333333,
+      "weight_status": "internal_mean",
+      "checks": [
+        "new_design_ideas",
+        "new_development_ideas",
+        "interaction_originality",
+        "integration",
+        "real_value"
+      ]
+    }
+  ],
+  "notes": []
+}

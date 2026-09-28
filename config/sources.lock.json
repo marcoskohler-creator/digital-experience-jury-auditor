@@ -1,0 +1,108 @@
+{
+  "schema_version": "1.0",
+  "last_verified": "2026-09-28",
+  "warning": "Refresh before substantive audit; this is a last-known baseline, not proof of current policy.",
+  "sources": [
+    {
+      "id": "awwwards_scoring",
+      "authority": "Awwwards",
+      "status": "public_observed",
+      "urls": [
+        "https://www.awwwards.com/websites/"
+      ],
+      "facts": {
+        "design_weight": 0.4,
+        "usability_weight": 0.3,
+        "creativity_weight": 0.2,
+        "content_weight": 0.1
+      },
+      "notes": "Public nominee/winner pages expose the 40/30/20/10 high-level scoring structure."
+    },
+    {
+      "id": "webby_criteria",
+      "authority": "The Webby Awards",
+      "status": "official",
+      "urls": [
+        "https://www.webbyawards.com/judging-criteria/"
+      ],
+      "facts": {
+        "website_mobile_criteria": [
+          "Content",
+          "Structure and Navigation",
+          "Visual Design",
+          "Functionality",
+          "Interactivity",
+          "Innovation",
+          "Overall Experience"
+        ],
+        "official_numeric_weights_published": false
+      }
+    },
+    {
+      "id": "cssda_method",
+      "authority": "CSS Design Awards",
+      "status": "public_official_site",
+      "urls": [
+        "https://www.cssdesignawards.com/"
+      ],
+      "facts": {
+        "jury_dimensions": [
+          "UI",
+          "UX",
+          "Innovation"
+        ],
+        "wotd_reference": "average above approximately 8.0, variable by submission quality",
+        "special_kudos_reference": "judge average above 6",
+        "public_vote_predictable": false
+      }
+    },
+    {
+      "id": "fwa_method",
+      "authority": "FWA",
+      "status": "methodology_not_sufficiently_explicit",
+      "urls": [
+        "https://thefwa.com/"
+      ],
+      "facts": {
+        "official_numeric_weighting_verified": false
+      },
+      "notes": "Use empirical simulation only; never claim official numeric formula."
+    },
+    {
+      "id": "google_search",
+      "authority": "Google Search Central",
+      "status": "official",
+      "urls": [
+        "https://developers.google.com/search/docs/essentials",
+        "https://developers.google.com/search/docs/fundamentals/seo-starter-guide"
+      ]
+    },
+    {
+      "id": "core_web_vitals",
+      "authority": "web.dev / Google",
+      "status": "official",
+      "urls": [
+        "https://web.dev/articles/vitals",
+        "https://web.dev/articles/defining-core-web-vitals-thresholds"
+      ],
+      "facts": {
+        "LCP_good_ms": 2500,
+        "INP_good_ms": 200,
+        "CLS_good": 0.1,
+        "percentile": 75,
+        "segment_by_device": true
+      }
+    },
+    {
+      "id": "wcag_22",
+      "authority": "W3C",
+      "status": "normative",
+      "urls": [
+        "https://www.w3.org/TR/WCAG22/"
+      ],
+      "facts": {
+        "baseline": "WCAG 2.2"
+      }
+    }
+  ]
+}

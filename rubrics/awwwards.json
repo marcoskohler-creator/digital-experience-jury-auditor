@@ -1,0 +1,166 @@
+{
+  "rubric_id": "awwwards-readiness",
+  "name": "Awwwards Readiness",
+  "version": "1.0.0",
+  "scale": "0-10",
+  "officiality": "mixed_public_weights_internal_subrubrics",
+  "aggregation": {
+    "type": "weighted_mean",
+    "formula": "design*.40 + usability*.30 + creativity*.20 + content*.10"
+  },
+  "dimensions": [
+    {
+      "id": "design",
+      "label": "Design",
+      "weight": 0.4,
+      "weight_status": "public_high_level",
+      "subdimensions": [
+        [
+          "art_direction",
+          0.2
+        ],
+        [
+          "typography",
+          0.15
+        ],
+        [
+          "layout_grid_composition",
+          0.15
+        ],
+        [
+          "visual_hierarchy",
+          0.15
+        ],
+        [
+          "system_consistency",
+          0.1
+        ],
+        [
+          "responsive_visual_execution",
+          0.1
+        ],
+        [
+          "imagery_media_treatment",
+          0.1
+        ],
+        [
+          "detail_polish",
+          0.05
+        ]
+      ]
+    },
+    {
+      "id": "usability",
+      "label": "Usability",
+      "weight": 0.3,
+      "weight_status": "public_high_level",
+      "subdimensions": [
+        [
+          "information_architecture_navigation",
+          0.2
+        ],
+        [
+          "clarity_orientation",
+          0.15
+        ],
+        [
+          "task_flow",
+          0.15
+        ],
+        [
+          "interaction_feedback",
+          0.15
+        ],
+        [
+          "responsive_device_behavior",
+          0.1
+        ],
+        [
+          "accessibility_related_usability",
+          0.1
+        ],
+        [
+          "performance_perceived_latency",
+          0.1
+        ],
+        [
+          "error_recovery_control",
+          0.05
+        ]
+      ]
+    },
+    {
+      "id": "creativity",
+      "label": "Creativity",
+      "weight": 0.2,
+      "weight_status": "public_high_level",
+      "subdimensions": [
+        [
+          "concept_originality",
+          0.25
+        ],
+        [
+          "interaction_originality",
+          0.2
+        ],
+        [
+          "visual_distinctiveness",
+          0.2
+        ],
+        [
+          "narrative_idea_integration",
+          0.15
+        ],
+        [
+          "technology_purpose_integration",
+          0.1
+        ],
+        [
+          "memorability",
+          0.1
+        ]
+      ]
+    },
+    {
+      "id": "content",
+      "label": "Content",
+      "weight": 0.1,
+      "weight_status": "public_high_level",
+      "subdimensions": [
+        [
+          "clarity",
+          0.2
+        ],
+        [
+          "relevance",
+          0.15
+        ],
+        [
+          "voice_differentiation",
+          0.15
+        ],
+        [
+          "structure",
+          0.15
+        ],
+        [
+          "narrative",
+          0.1
+        ],
+        [
+          "microcopy_cta",
+          0.1
+        ],
+        [
+          "media_storytelling",
+          0.1
+        ],
+        [
+          "freshness_consistency",
+          0.05
+        ]
+      ]
+    }
+  ],
+  "notes": []
+}

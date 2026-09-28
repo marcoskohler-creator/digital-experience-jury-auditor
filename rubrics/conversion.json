@@ -1,0 +1,18 @@
+{
+  "rubric_id": "conversion",
+  "version": "1.0.0",
+  "checks": [
+    "value_clarity",
+    "cta_discoverability",
+    "friction",
+    "trust_cues",
+    "task_completion",
+    "form_burden",
+    "interruption",
+    "continuity",
+    "post_action_feedback"
+  ],
+  "rules": [
+    "Technology or trend presence does not earn points by itself."
+  ]
+}

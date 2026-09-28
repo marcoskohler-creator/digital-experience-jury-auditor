@@ -1,0 +1,24 @@
+{
+  "rubric_id": "content",
+  "version": "1.0.0",
+  "checks": [
+    "clarity",
+    "voice",
+    "relevance",
+    "differentiation",
+    "consistency",
+    "structure",
+    "narrative",
+    "microcopy",
+    "cta",
+    "density",
+    "redundancy",
+    "media_storytelling",
+    "audience_fit",
+    "interface_fit",
+    "freshness"
+  ],
+  "rules": [
+    "Technology or trend presence does not earn points by itself."
+  ]
+}

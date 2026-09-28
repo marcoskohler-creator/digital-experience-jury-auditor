@@ -1,0 +1,24 @@
+{
+  "rubric_id": "motion",
+  "version": "1.0.0",
+  "checks": [
+    "purpose",
+    "hierarchy",
+    "timing",
+    "easing",
+    "continuity",
+    "spatial_logic",
+    "scroll_mapping",
+    "gesture_mapping",
+    "microinteraction",
+    "transition_consistency",
+    "motion_density",
+    "reduced_motion",
+    "performance_cost",
+    "discoverability",
+    "feedback"
+  ],
+  "rules": [
+    "Technology or trend presence does not earn points by itself."
+  ]
+}

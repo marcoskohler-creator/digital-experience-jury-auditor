@@ -1,0 +1,20 @@
+{
+  "rubric_id": "distinctiveness",
+  "version": "1.0.0",
+  "checks": [
+    "typography_similarity",
+    "layout_similarity",
+    "hero_composition",
+    "navigation_model",
+    "motion_language",
+    "transition_model",
+    "color_treatment",
+    "cursor_model",
+    "interaction_grammar",
+    "visual_motif",
+    "content_architecture"
+  ],
+  "rules": [
+    "Technology or trend presence does not earn points by itself."
+  ]
+}

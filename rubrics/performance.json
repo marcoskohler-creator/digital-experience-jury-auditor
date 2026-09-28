@@ -1,0 +1,36 @@
+{
+  "rubric_id": "performance",
+  "version": "1.0.0",
+  "metrics": {
+    "field_core_web_vitals": {
+      "LCP_good_ms": 2500,
+      "INP_good_ms": 200,
+      "CLS_good": 0.1,
+      "percentile": 75,
+      "device_segmented": true
+    },
+    "lab_supporting": [
+      "LCP",
+      "CLS",
+      "TTFB",
+      "FCP",
+      "Speed Index",
+      "TBT",
+      "JS transferred/executed",
+      "CSS",
+      "images",
+      "fonts",
+      "third-party payload",
+      "request count",
+      "main-thread work",
+      "long tasks",
+      "cache behavior",
+      "hydration cost"
+    ]
+  },
+  "rules": [
+    "Separate FIELD_DATA and LAB_DATA.",
+    "Lab must not silently substitute field data.",
+    "INP requires field or interaction-aware measurement; TBT is only a lab proxy."
+  ]
+}

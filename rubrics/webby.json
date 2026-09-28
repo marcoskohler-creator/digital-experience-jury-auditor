@@ -1,0 +1,56 @@
+{
+  "rubric_id": "webby-readiness",
+  "name": "Webby Readiness",
+  "version": "1.0.0",
+  "scale": "0-10",
+  "officiality": "official_dimensions_internal_aggregation",
+  "aggregation": {
+    "type": "internal_equal_weight_index",
+    "warning": "Not an official Webby numeric formula. Always preserve raw dimension scores."
+  },
+  "dimensions": [
+    {
+      "id": "content",
+      "label": "Content",
+      "weight": 0.14285714285714285,
+      "weight_status": "internal_equal_weight_only_no_official_weight_published"
+    },
+    {
+      "id": "structure_and_navigation",
+      "label": "Structure and Navigation",
+      "weight": 0.14285714285714285,
+      "weight_status": "internal_equal_weight_only_no_official_weight_published"
+    },
+    {
+      "id": "visual_design",
+      "label": "Visual Design",
+      "weight": 0.14285714285714285,
+      "weight_status": "internal_equal_weight_only_no_official_weight_published"
+    },
+    {
+      "id": "functionality",
+      "label": "Functionality",
+      "weight": 0.14285714285714285,
+      "weight_status": "internal_equal_weight_only_no_official_weight_published"
+    },
+    {
+      "id": "interactivity",
+      "label": "Interactivity",
+      "weight": 0.14285714285714285,
+      "weight_status": "internal_equal_weight_only_no_official_weight_published"
+    },
+    {
+      "id": "innovation",
+      "label": "Innovation",
+      "weight": 0.14285714285714285,
+      "weight_status": "internal_equal_weight_only_no_official_weight_published"
+    },
+    {
+      "id": "overall_experience",
+      "label": "Overall Experience",
+      "weight": 0.14285714285714285,
+      "weight_status": "internal_equal_weight_only_no_official_weight_published"
+    }
+  ],
+  "notes": []
+}

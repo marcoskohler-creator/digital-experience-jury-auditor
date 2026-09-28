@@ -1,0 +1,18 @@
+{
+  "rubric_id": "security_privacy",
+  "version": "1.0.0",
+  "checks": [
+    "https",
+    "mixed_content",
+    "security_headers",
+    "third_party_resources",
+    "obvious_secret_exposure",
+    "tracking",
+    "consent_behavior",
+    "dependency_signals_if_source",
+    "unsafe_visible_forms_practices"
+  ],
+  "rules": [
+    "Technology or trend presence does not earn points by itself."
+  ]
+}

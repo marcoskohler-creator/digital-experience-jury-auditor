@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "benchmark-cohort.schema.json",
+  "title": "Benchmark Cohort",
+  "type": "object",
+  "required": [
+    "cohort_id",
+    "cohort_type",
+    "compatibility_rationale",
+    "records"
+  ],
+  "properties": {
+    "cohort_id": {
+      "type": "string"
+    },
+    "cohort_type": {
+      "enum": [
+        "DIRECT_PEERS",
+        "AWARD_CATEGORY_PEERS",
+        "ELITE",
+        "MULTI_AWARD",
+        "TEMPORAL",
+        "CUSTOM"
+      ]
+    },
+    "compatibility_rationale": {
+      "type": "string"
+    },
+    "sample_confidence": {
+      "enum": [
+        "HIGH",
+        "MEDIUM",
+        "LOW_SAMPLE_SIZE"
+      ]
+    },
+    "records": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "filters": {
+      "type": "object"
+    },
+    "created_at": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,62 @@
+[
+  {
+    "id": "synthetic_01",
+    "label": "winner",
+    "score": 8.7,
+    "synthetic": true
+  },
+  {
+    "id": "synthetic_02",
+    "label": "winner",
+    "score": 8.4,
+    "synthetic": true
+  },
+  {
+    "id": "synthetic_03",
+    "label": "elite",
+    "score": 8.9,
+    "synthetic": true
+  },
+  {
+    "id": "synthetic_04",
+    "label": "elite",
+    "score": 8.2,
+    "synthetic": true
+  },
+  {
+    "id": "synthetic_05",
+    "label": "ordinary",
+    "score": 7.2,
+    "synthetic": true
+  },
+  {
+    "id": "synthetic_06",
+    "label": "ordinary",
+    "score": 7.4,
+    "synthetic": true
+  },
+  {
+    "id": "synthetic_07",
+    "label": "ordinary",
+    "score": 6.8,
+    "synthetic": true
+  },
+  {
+    "id": "synthetic_08",
+    "label": "ordinary",
+    "score": 7.7,
+    "synthetic": true
+  },
+  {
+    "id": "synthetic_09",
+    "label": "ordinary",
+    "score": 8.0,
+    "synthetic": true
+  },
+  {
+    "id": "synthetic_10",
+    "label": "ordinary",
+    "score": 7.1,
+    "synthetic": true
+  }
+]

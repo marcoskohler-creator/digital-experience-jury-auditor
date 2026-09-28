@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "calibration-report.schema.json",
+  "title": "Calibration Report",
+  "type": "object",
+  "required": [
+    "rubric_id",
+    "sample_size",
+    "checks",
+    "status"
+  ],
+  "properties": {
+    "rubric_id": {
+      "type": "string"
+    },
+    "sample_size": {
+      "type": "integer"
+    },
+    "checks": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "status": {
+      "enum": [
+        "PASS",
+        "WARN",
+        "FAIL"
+      ]
+    },
+    "notes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

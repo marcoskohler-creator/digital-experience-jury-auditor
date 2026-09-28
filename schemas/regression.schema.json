@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "regression.schema.json",
+  "title": "Regression Record",
+  "type": "object",
+  "required": [
+    "metric",
+    "previous",
+    "current",
+    "status"
+  ],
+  "properties": {
+    "metric": {
+      "type": "string"
+    },
+    "previous": {},
+    "current": {},
+    "delta": {},
+    "status": {
+      "enum": [
+        "IMPROVED",
+        "UNCHANGED",
+        "REGRESSED",
+        "NEW_ISSUE",
+        "RESOLVED",
+        "NOT_COMPARABLE"
+      ]
+    },
+    "methodology_compatible": {
+      "type": "boolean"
+    },
+    "notes": {
+      "type": "string"
+    }
+  }
+}
